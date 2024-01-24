@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+html{
+    background: black;
+    color: white;
+}
+
+header{
+    width: 95%;
+    display: flex;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.video-container{
+    transform: scale(1);
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    background: rgb(26, 26, 26);
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 5px;
+
+    img{
+        border-radius: 10px;
+        width: 300px;
+    }
+}
+.video-container:hover{
+    transform: scale(1.01);
+}
+.video-container:active{
+    transform: scale(.99);
+    background: rgb(20, 20, 20);
+}
+
+#video-container{
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#search-container{
+    background: white;
+    width: fit-content;
+    padding: 0 5px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    input, input:active, input:active, input:focus{
+        background: none;
+        color: black;
+        border: none;
+        outline: none;
+        border-left: 1px solid black;
+    }
+    input{
+        height: 30px;
+        border-left: 1px solid black;
+        padding-left: 5px;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
